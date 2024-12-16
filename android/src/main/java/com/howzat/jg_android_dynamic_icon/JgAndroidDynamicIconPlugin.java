@@ -83,7 +83,7 @@ public class JgAndroidDynamicIconPlugin implements FlutterPlugin, MethodCallHand
 
         // Observe the lifecycle
         lifecycle.addObserver((LifecycleEventObserver) (source, event) -> {
-            if (event == Lifecycle.Event.ON_PAUSE) {
+            if (event == Lifecycle.Event.ON_STOP) {
                 updateIcon();
             }
         });
